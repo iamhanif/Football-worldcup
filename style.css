@@ -16,6 +16,8 @@ body {
 
 }
 
+/* Header part  */
+
 header {
     display: flex;
     gap: 24px;
@@ -34,8 +36,8 @@ header {
     margin: 111px 0 111px 106px;
 }
 
-.banner h1,
-.banner p {
+.banner-title,
+.banner-para {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
@@ -43,7 +45,7 @@ header {
     line-height: 80px;
 }
 
-.banner p {
+.banner-para {
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
@@ -62,11 +64,14 @@ header {
     display: flex;
     padding: 16px 25px;
     gap: 10px;
+    color: #ffffff;
     background: #DD0000;
     border-radius: 5px;
     margin-top: 30px;
     border: none;
 }
+
+/* Side Bar  */
 
 .side-bar {
     margin: 0px 24px 130px 140px;
@@ -80,7 +85,7 @@ header {
     justify-content: space-around;
 }
 
-.side-bar>div {
+.aside {
     margin: 30px;
     display: flex;
     flex-direction: column;
@@ -89,7 +94,7 @@ header {
 
 }
 
-.side-bar>div div {
+.side-bar-link {
     width: 252px;
     height: 64px;
     border-radius: 10px;
@@ -99,15 +104,20 @@ header {
     justify-content: center;
 }
 
-.side-bar a {
+.side-link {
     text-decoration: none;
     color: black;
     display: flex;
 }
 
-#clicked {
+
+.upcoming-match,
+.blog {
+    color: #ffffff;
     background-color: #DD0000;
 }
+
+/* Blog and upcoming matches part  */
 
 .main-part {
     display: flex;
@@ -130,6 +140,29 @@ header {
     margin: 0 auto;
     border: 1px solid #E8E8E8;
     border-radius: 10px;
+}
+
+/* index style  */
+.transfer {
+    border: 1px solid #161616;
+    padding: 5px 20px;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.title {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.comment {
+    margin-left: 15px;
+}
+
+.trans-article img {
+    width: 100%;
 }
 
 article p {
@@ -173,6 +206,7 @@ footer {
     color: #ffffff;
     border: none;
     border-radius: 10px;
+    margin-top: 130px;
 }
 
 .footer {
